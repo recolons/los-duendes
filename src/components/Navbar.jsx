@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -11,13 +12,13 @@ const Navbar = () => {
   }
 
   return (
-    <div className='text-white flex justify-between items-center max-w-[1240px] px-4 mx-auto h-24'>
+    <div className='text-white flex justify-between items-center max-w-[1240px] px-4 mx-auto h-24 bg-[#000300]'>
       <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Travelling Duende.</h1>
       <ul className='md:flex hidden'>
-        <li className='p-4'>Home</li>
+        <li className='p-4'><Link to='/'>Home</Link></li>
         <li className='p-4'>Tours</li>
         <li className='p-4'>About</li>
-        <li className='p-4'>Contact</li>
+        <li className='p-4'><Link to='/contact'>Contact</Link></li>
       </ul>
       {/* menu icon mobile */}
       <div onClick={handleNav} className='block md:hidden'>
@@ -27,10 +28,10 @@ const Navbar = () => {
       <div className={!nav ? 'fixed left-0 top-0 w-[60%] border-r border-r-gray-900 h-full bg-[#000300] ease-in-out duration-500 md:hidden' : 'fixed -left-full top-0 ease-in-out duration-500'}>
         <h1 className='w-full text-3xl font-bold text-[#00df9a] m-8 ml-4 mb-4'>Travelling Duende.</h1>
         <ul className="uppercase p-4">
-            <li className='p-4 border-b border-gray-600'>Home</li>
+            <li className='p-4 border-b border-gray-600'><Link to='/'>Home</Link></li>
             <li className='p-4 border-b border-gray-600'>Tours</li>
             <li className='p-4 border-b border-gray-600'>About</li>
-            <li className='p-4'>Contact</li>
+            <li className='p-4'><Link to='/contact'>Contact</Link></li>
         </ul>
       </div>
     </div>
