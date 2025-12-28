@@ -1,10 +1,10 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
-import {FaXTwitter} from 'react-icons/fa6'
+import { FaFacebook, FaInstagram, FaYoutube, FaRegCopyright, FaGithub, FaLinkedin } from 'react-icons/fa'
+import {FaXTwitter, FaDiamond} from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid md:grid-cols-3 gap-8 text-gray-300'>
+    <div className='max-w-[1240px] mx-auto pt-16 pb-6 px-4 grid md:grid-cols-3 gap-8 text-gray-300 bg-gray-900'>
         <div className='md:col-span-2'>
             <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Travelling Duende.</h1>
             {/* short description, maybe say follow us on social media */}
@@ -15,9 +15,15 @@ const Footer = () => {
                 <FaXTwitter size={20} />
                 <FaYoutube size={20} />
             </div>
+            <p className='flex items-center gap-2 text-xs mt-10 text-gray-400'><FaRegCopyright size={10} /> 2026 Travelling Duende.
+             All rights reserved.  <FaDiamond size={5} />  Website by R. Colón <a href='https://github.com/recolons' 
+             target='_blank' rel='noopener noreferrer'><FaGithub size={13} /></a> 
+             <a href='https://www.linkedin.com/in/rubene-colon/' target='_blank' rel='noopener noreferrer'>
+             <FaLinkedin size={13} /></a>
+            </p>
         </div>
-        <div className='col-span-1'>
-          <h1>Test2</h1>
+        <div className='col-span-1 flex flex-col justify-end'>
+          <p className='flex items-center gap-2 text-xs'></p>
         </div>
         
     </div>

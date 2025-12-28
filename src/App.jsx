@@ -9,7 +9,6 @@ function App() {
     <div>
       <Hero />
       <Tours />
-      <Footer />
     </div>
   )
 }

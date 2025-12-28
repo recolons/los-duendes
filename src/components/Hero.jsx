@@ -14,7 +14,8 @@ const Hero = () => {
             <p className='md:text-2xl text-xl text-gray-500 font-bold'>
                 Something about the island placeholder text
             </p>
-            <button className='bg-[#00df9a] hover:bg-[#00df9a]/80 text-black w-[200px] rounded-xs font-bold py-2 mt-6 mx-auto'>Book a Tour</button>
+            <button className='bg-[#00df9a] text-black w-[200px] rounded-xs font-bold py-2 mt-6 mx-auto'>
+              Book a Tour</button>
         </div>
         
     </div>
