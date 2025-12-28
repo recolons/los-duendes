@@ -1,8 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Contact = () => {
+
+  // Set title
+  useEffect(() => {
+    document.title = 'Contact | Travelling Duende'
+  }, [])
+
+  // Phone number state
   const [phone, setPhone] = useState('')
 
+  // Format phone number
   const formatPhoneNumber = (value) => {
     // Remove all non-digit characters
     const phoneNumber = value.replace(/\D/g, '')
@@ -17,6 +25,7 @@ const Contact = () => {
     }
   }
 
+  // Handle phone number change
   const handlePhoneChange = (e) => {
     const formatted = formatPhoneNumber(e.target.value)
     setPhone(formatted)
@@ -26,6 +35,7 @@ const Contact = () => {
   const [result, setResult] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Submit form
   const onSubmit = async (event) => {
     event.preventDefault();
     setIsSubmitting(true);
@@ -59,7 +69,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='bg-gray-800 max-w-lg mx-auto mt-4 p-4 rounded-lg shadow-md mb-10 text-gray-100'>
+    <div className='bg-gray-800 max-w-lg mx-auto mt-4 p-4 rounded-lg shadow-md mb-10 text-gray-300'>
       <h2 className='text-3xl font-bold text-center mb-4 text-[#00df9a]'>Contact Us</h2>
       
       {/* Success Alert */}

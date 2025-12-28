@@ -16,8 +16,7 @@ const Footer = () => {
                 <FaYoutube size={20} />
             </div>
             <p className='flex items-center gap-2 text-xs mt-10 text-gray-400'><FaRegCopyright size={10} /> 2026 Travelling Duende.
-             All rights reserved.  <FaDiamond size={5} />  Website by R. Colón <a href='https://github.com/recolons' 
-             target='_blank' rel='noopener noreferrer'><FaGithub size={13} /></a> 
+             All rights reserved.  <FaDiamond size={5} />  Website by R. Colón  
              <a href='https://www.linkedin.com/in/rubene-colon/' target='_blank' rel='noopener noreferrer'>
              <FaLinkedin size={13} /></a>
             </p>
