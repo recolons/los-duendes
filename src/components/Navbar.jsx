@@ -13,8 +13,8 @@ const Navbar = () => {
   }
 
   return (
-    <div className='text-white flex justify-between items-center w-full px-24 mx-auto h-24 bg-green-900'>
-      <Link to='/'><h1 className='w-full text-3xl font-bold font-medieval'>Travelling Duende.</h1></Link>
+    <div className='text-white flex justify-between items-center w-full px-24 mx-auto h-18 bg-green-900'>
+      <Link to='/'><h1 className='w-full text-2xl font-bold font-medieval'>Travelling Duende.</h1></Link>
       <ul className='md:flex hidden [&_li]:hover:text-amber-600/50 [&_li]:transition-colors [&_li]:duration-300 '>
         <li className='p-4'>
           <Link to='/' className={location.pathname === '/' ? 'text-amber-600' : ''}>Home</Link>
