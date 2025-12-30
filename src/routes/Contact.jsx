@@ -69,8 +69,8 @@ const Contact = () => {
   };
 
   return (
-    <div className='bg-gray-800 max-w-lg mx-auto mt-4 p-4 rounded-lg shadow-md mb-10 text-gray-300'>
-      <h2 className='text-3xl font-bold text-center mb-4 text-[#00df9a]'>Contact Us</h2>
+    <div className='bg-amber-600/50 max-w-9/10 md:max-w-6/10 mx-auto p-4 rounded-lg shadow-xl/30 my-10 text-white'>
+      <h2 className='text-3xl font-extrabold text-center mb-4 text-gray-900'>Contact Us!</h2>
       
       {/* Success Alert */}
       {result === "success" && (
@@ -87,7 +87,7 @@ const Contact = () => {
       )}
       
       <form action="" onSubmit={onSubmit} 
-      className='[&_div]:mb-4 [&_input]:bg-gray-800 [&_input]:w-full [&_input]:px-3 [&_input]:py-2 [&_input]:border 
+      className='[&_div]:mb-4 [&_input]:bg-gray-500/50 [&_input]:w-full [&_input]:px-3 [&_input]:py-2 [&_input]:border 
       [&_input]:rounded-md [&_input]:focus:border-blue-500 [&_input]:focus:outline-none [&_label]:block [&_label]:text-sm 
       [&_label]:font-semibold'>
         <div>
@@ -114,15 +114,15 @@ const Contact = () => {
         <div>
           <label htmlFor="message">Message</label>
           <textarea placeholder='Type your message here...' 
-          className='bg-gray-800 w-full px-3 py-2 border rounded-md focus:border-blue-500 focus:outline-none' 
+          className='bg-gray-500/50 w-full px-3 py-2 border rounded-md focus:border-blue-500 focus:outline-none' 
           required rows={4} id="message" name="message" />
         </div>
         <div className='flex justify-center'>
           <button 
             type="submit" 
             disabled={isSubmitting}
-            className='bg-[#00df9a] hover:bg-[#00df9a]/80 disabled:bg-gray-600 disabled:cursor-not-allowed
-             text-black w-[200px] rounded-xs font-bold py-2 mt-3 cursor-pointer'>
+            className='bg-green-700 hover:bg-green-700/80 disabled:bg-gray-600 disabled:cursor-not-allowed
+             text-gray-200 w-[200px] rounded-xs font-bold py-2 mt-3 cursor-pointer'>
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
         </div>

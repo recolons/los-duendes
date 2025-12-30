@@ -4,9 +4,9 @@ import {FaXTwitter, FaDiamond} from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] mx-auto pt-16 pb-6 px-4 grid md:grid-cols-3 gap-8 text-gray-300 bg-gray-900'>
+    <div className='w-full mx-auto pt-16 pb-10 px-22 grid md:grid-cols-3 gap-8 text-gray-300 bg-gray-900'>
         <div className='md:col-span-2'>
-            <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Travelling Duende.</h1>
+            <h1 className='font-medieval w-full text-3xl font-bold text-amber-600'>Travelling Duende.</h1>
             {/* short description, maybe say follow us on social media */}
             <p className='py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
             <div className='flex justify-between md:w-[75%] w-[50%] my-6'>
