@@ -6,9 +6,9 @@ const About = () => {
     document.title = 'About | Travelling Duende'
   }, [])
   return (
-    <div className='text-gray-900'>
+    <div className='text-gray-900 mt-[-72px]'>
         <div className='max-w-[800px] w-full h-screen mx-auto text-center flex flex-col items-center justify-center'>
-            <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 font-medieval'>About Us</h1>
+            <h1 className='lg:text-7xl sm:text-6xl text-4xl font-bold md:py-6 font-medieval'>About Us</h1>
             <div>
                 {/* maybe change py-4 to py-2 or remove*/}
                 <p className='md:text-3xl sm:text-2xl text-xl font-bold py-4'>We are a team of adventure seekers who are passionate about connecting with nature through our tours.</p>

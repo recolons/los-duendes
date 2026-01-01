@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     // change text maybe add bg image to hero section
     <div className='text-gray-900'>
-        <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
+        <div className='max-w-[800px] mt-[-72px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
             <p className='uppercase text-green-700 font-bold p-2 pt-16'>Private Exclusive Tours</p>
             <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>Come explore with us!</h1>
             <div>

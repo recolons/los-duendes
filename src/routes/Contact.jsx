@@ -70,7 +70,7 @@ const Contact = () => {
 
   return (
     <div className='bg-amber-600/50 max-w-9/10 md:max-w-6/10 mx-auto p-4 rounded-lg shadow-xl/30 my-10 text-white'>
-      <h2 className='text-3xl font-extrabold text-center mb-4 text-gray-900'>Contact Us!</h2>
+      <h2 className='text-3xl font-bold text-center mb-4'>Contact Us!</h2>
       
       {/* Success Alert */}
       {result === "success" && (
@@ -87,7 +87,7 @@ const Contact = () => {
       )}
       
       <form action="" onSubmit={onSubmit} 
-      className='[&_div]:mb-4 [&_input]:bg-gray-500/50 [&_input]:w-full [&_input]:px-3 [&_input]:py-2 [&_input]:border 
+      className='[&_div]:mb-4 [&_input]:bg-amber-700/20 [&_input]:w-full [&_input]:px-3 [&_input]:py-2 [&_input]:border [&_input]:border-amber-900/50
       [&_input]:rounded-md [&_input]:focus:border-blue-500 [&_input]:focus:outline-none [&_label]:block [&_label]:text-sm 
       [&_label]:font-semibold'>
         <div>
@@ -114,7 +114,7 @@ const Contact = () => {
         <div>
           <label htmlFor="message">Message</label>
           <textarea placeholder='Type your message here...' 
-          className='bg-gray-500/50 w-full px-3 py-2 border rounded-md focus:border-blue-500 focus:outline-none' 
+          className='bg-amber-700/20 w-full px-3 py-2 border rounded-md focus:border-blue-500 focus:outline-none border-amber-900/50' 
           required rows={4} id="message" name="message" />
         </div>
         <div className='flex justify-center'>

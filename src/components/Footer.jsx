@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
         </div>
         <div className='col-span-1 flex flex-col justify-end'>
-          <p className='flex items-center gap-2 text-xs text-gray-400 mx-auto'>Cookie Policy</p>
+          <p className='flex items-end gap-2 text-xs text-gray-500 mx-auto text-right'>Cookie Policy</p>
         </div>
         
     </div>
