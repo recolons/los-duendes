@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='md:col-span-2'>
             <h1 className='font-medieval w-full text-3xl font-bold text-amber-600'>Travelling Duende.</h1>
             {/* short description, maybe say follow us on social media */}
-            <p className='py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            <p className='py-4 italic'>Explore, connect, and experience. Find yourself in the process.</p>
             <div className='flex justify-between md:w-[75%] w-[50%] my-6'>
                 <FaFacebook size={20} />
                 <FaInstagram size={20} />
