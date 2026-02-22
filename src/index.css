@@ -8,3 +8,7 @@
 @theme {
   --font-medieval: 'MedievalSharp', sans-serif;
 }
+
+body {
+  background-color: #e5e7eb;
+}

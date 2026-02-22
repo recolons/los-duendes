@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Hero from './components/Hero'
 import Tours from './components/Tours'
-import Footer from './components/Footer'
+import TourInfo from './components/TourInfo'
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
     <div>
       <Hero />
       <Tours />
+      <TourInfo />
     </div>
   )
 }

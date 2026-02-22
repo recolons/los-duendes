@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Carousel from '../components/Carousel'
 import { TbCliffJumping } from "react-icons/tb";
 import { IoTrailSignOutline } from "react-icons/io5";
-import { FaMountainSun, FaPersonSwimming, FaPersonHiking } from "react-icons/fa6";
+import { FaMountainSun, FaPersonSwimming, FaPersonHiking, FaDiamond } from "react-icons/fa6";
 
 const Tours = () => {
 
@@ -34,7 +34,7 @@ const Tours = () => {
   return (
     <div className='text-gray-900'>
       {/* via ferrata tour */}
-      <div id='via-ferrata-description' className='max-w-[800px] mt-[-72px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
+      <div id='via-ferrata-description' className='max-w-[800px] mt-[12px] w-full mx-auto text-center flex flex-col justify-center'>
         <p className='uppercase text-green-700 font-bold p-2 pt-16'>Naguabo, PR</p>
         <h1 className='lg:text-7xl sm:text-6xl text-4xl font-bold md:py-6 font-medieval'>Via Ferrata</h1>
         <p className='md:text-2xl text-xl text-gray-600 my-2'>
@@ -43,6 +43,11 @@ const Tours = () => {
         river that would have been nearly impossible without the assistance of these attachments.
         </p>
       </div>
+      <div className='flex justify-center py-16 gap-2 text-green-900'>
+        <FaDiamond size={8} />
+        <FaDiamond size={8} />
+        <FaDiamond size={8} />
+        </div>
       {/* full adventure tour */}
       <div id='full-adventure-description' className='max-w-[800px] mt-[-72px] w-full mx-auto text-center flex flex-col justify-center'>
         <p className='uppercase text-green-700 font-bold p-2 pt-16'>Naguabo, PR</p>
