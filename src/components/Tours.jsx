@@ -45,7 +45,13 @@ const Tours = () => {
             <p className='text-green-600 uppercase font-bold'>Naguabo, PR</p>
             <h1 className='text-3xl font-bold py-3'>Full Adventure</h1>
             <p>Via Ferrata plus more activities including cliff jumping, river trekking, and more!</p>
+            <Link 
+              to='/tours' 
+              className='w-[100px]'
+              onClick={handleTourClick('full-adventure-description')}
+            >
             <button className='border w-[100px] rounded-sm font-medium bg-black text-white p-2 mt-4 hover:bg-gray-800'>Read More</button>
+          </Link>
           </div>
         </div>
       </div>
